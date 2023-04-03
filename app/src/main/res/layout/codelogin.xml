@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+           android:layout_marginTop="20dp"
+            android:text="Email Adresininize Gelen Kodu Giriniz"
+            android:textSize="20dp"
+            android:textColor="@color/dark_blue"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/checkmycode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kodu Giriniz"
+            android:textSize="20sp"
+            android:textColorHint="@color/dark_blue"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/resedpasword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:layout_marginStart="150dp"
+                android:text="Şifremi Sıfırla"
+                android:textSize="20sp"
+                android:background="@color/dark_blue"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

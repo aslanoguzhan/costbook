@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.costbook">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.example.costbook.ui.record.Costrecord" />
+        <activity
+            android:name="com.example.costbook.ui.cost_infopop.MachineCostinfo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.costbook.ui.cost_infopop.FuelCostinfo"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name="com.example.costbook.ui.cost_infopop.SeedCostinfo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.costbook.ui.cost_infopop.OrganicFertilizersinfo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.costbook.ui.cost_infopop.ChemicalFertilizersinfo"
+            android:theme="@style/AppTheme.CustomTheme"/>
+        <activity
+            android:name="com.example.costbook.ui.cost_infopop.LaborforceCostinfo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.costbook.ui.cost_infopop.Pesticideinfo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.costbook.ui.cost_infopop.İrrigationinfo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.costbook.ui.unitcost_infopop.Unitcost"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.costbook.ui.record.Productrecord"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.costbook.ui.product_infopop.Totalproductinfo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.costbook.ui.cost_infopop.Costtotalinfo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.costbook.ui.gardeninfo.Garden_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.example.costbook.ui.gardeninfo.EditGarden"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.example.costbook.ui.gardeninfo.deletegarden_pop"
+            android:theme="@style/AppTheme.CustomTheme" />
+
+        <activity android:name="com.example.costbook.ui.record.GardenAddCost"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name="com.example.costbook.ui.record.GardenAdd"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name="com.example.costbook.ui.record.GardenAddProduct"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name="com.example.costbook.ui.cost_infopop.MounthCost"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name="com.example.costbook.ui.login.Register"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name="com.example.costbook.ui.login.Resetpassword"
+
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name="com.example.costbook.ui.login.Settings"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name="com.example.costbook.ui.useroperations.MyGardens"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name="com.example.costbook.ui.useroperations.MyProduts"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name="com.example.costbook.ui.useroperations.MyCosts"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name="com.example.costbook.ui.login.Codelogin"
+
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name="com.example.costbook.ui.login.SendCode"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity android:name=".retrofit.MainActivity"
+            android:label="Hesap Defterim"
+            android:screenOrientation="portrait"
+
+           >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

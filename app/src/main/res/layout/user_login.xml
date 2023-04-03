@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:layout_height="wrap_content"
+    tools:context=".ui.login.User_Login">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/et_email"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20sp"
+        android:padding="20dp"
+        android:layout_marginBottom="17dp"
+        android:src="@drawable/usericon1"
+        android:text="Giriş Yap"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/e_mail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:text="aslanoguzz@hotmail.com"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_above="@id/et_password"
+        android:background="@drawable/et_custom"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="123456"
+        android:padding="15dp"
+        android:fontFamily="@font/roboto_regular"
+        android:inputType="textPassword"
+        android:layout_centerInParent="true"
+        android:background="@drawable/et_custom"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_custom"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Üye Ol"
+        android:textSize="20dp"
+        android:clickable="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/dark_blue"
+        android:src="@drawable/ic_arrow_right"
+        android:layout_above="@id/forgetpassword"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/forgetpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:text="Parolamı Unuttum?"
+        android:textColor="@color/dark_blue"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="200dp"/>
+
+
+</LinearLayout>
+
+</ScrollView>

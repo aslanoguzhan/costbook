@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#b1ffb1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tarlaname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tarla Seçiniz"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+
+            <Spinner
+                android:id="@+id/tarlainfospiner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:prompt="@string/selectGarden"
+                android:spinnerMode="dropdown"
+                app:layout_constraintTop_toBottomOf="@+id/tarlaname" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ürünname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ürün Seçiniz"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+
+            <Spinner
+                android:id="@+id/ürüninfospiner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:prompt="@string/selectGarden"
+                android:spinnerMode="dropdown"
+                app:layout_constraintTop_toBottomOf="@+id/ürünname" />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/toplamürün"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Toplam Ürün"
+                android:textSize="20dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/totalürün"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="Toplam ürün mikatarını girin"
+                android:maxLength="50"
+                android:textColor="#000000"
+                android:textColorHint="#C7C7CD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toplamürün" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Kaydet"
+            android:background="#0080ff"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
